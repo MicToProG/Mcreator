@@ -17,6 +17,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.nerdymcuniverses.init.NerdyMcuniversesModItems;
+import net.mcreator.nerdymcuniverses.init.NerdyMcuniversesModBlocks;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -36,6 +39,10 @@ public class NerdyMcuniversesMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		NerdyMcuniversesModBlocks.REGISTRY.register(bus);
+
+		NerdyMcuniversesModItems.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init
