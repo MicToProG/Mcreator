@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "nerdy_mcuniverses:block/asd",
-    "particle": "nerdy_mcuniverses:block/asd"
-  },
-  "render_type": "solid"
-}
